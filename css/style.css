@@ -46,7 +46,7 @@ nav{
 
 /* Sign up modal styling */
 .sign-up-modal{
-    /* display: none; */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -85,14 +85,14 @@ input{
     color:rgb(255, 255, 244);
 }
 
-.close-sign-up{
+.close{
     color: rgb(145, 145, 145);
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close-sign-up:hover, .close-sign-up:focus{
+.close:hover, .close:focus{
     color: rgb(0,0,0);
     text-decoration: none;
     cursor: pointer;
