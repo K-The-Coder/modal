@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/df527e1d45.js" crossorigin="anonymous"></script>
+        <title>Modal</title>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <nav>
+            <div class="logo">
+                <h1>MODAL</h1>
+            </div>
+            <div class="user-btn">
+                <div id="sign-up"><i class="fas fa-user-plus"></i>Sign up</div>
+                <div id="sign-in"><i class="fas fa-sign-in-alt"></i>Sign in</div>
+            </div>
+            <ul class="main-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <!-- End of Navigation Bar -->
+
+        <!-- The Modal -->
+        <div id="sign-up" class="sign-up-modal">
+            <div class="sign-up-content">
+                <span class="close-sign-up">&times</span>
+                <div class="heading">
+                    <h3>Create Account</h1>
+                </div>
+                
+                <form>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="Enter first name">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Enter last name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter email address">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                    <div class="submit-container"><input type="submit" class="submit-btn" value="Create Account"></div>
+                    <div class="clear-container"><input type="reset" class="clear-btn" value="Clear"></div>
+                </form>
+            </div>
+        </div>
+        <div id="sign-in" class="sign-in-modal"></div>
+
+    </body>
+</html>
