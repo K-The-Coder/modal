@@ -22,10 +22,12 @@ nav{
 
 .user-btn div{cursor: pointer;}
 
+.mobile-user-btn{ display: none; }
+
 .main-menu{
     display: flex;
     justify-content: space-around;
-    width: 26%;
+    width: 36%;
 }
 
 .main-menu li{list-style: none;}
@@ -42,10 +44,16 @@ nav{
     height: 3px;
     margin: 5px;
     background-color:rgb(255, 255, 244);
+    transition: all 0.3s ease;
+}
+
+.container{ 
+    margin: 15% auto; 
+    width: 47%;
 }
 
 /* Sign up modal styling */
-.sign-up-modal{
+.sign-up-modal, .sign-in-modal{
     display: none;
     position: fixed;
     z-index: 1;
@@ -58,7 +66,7 @@ nav{
     background-color: rgba(0,0,0, 0.4);
 }
 
-.sign-up-content{
+.sign-up-content, .sign-in-content{
     background-color: rgb(255, 255, 244);
     margin: 15% auto;
     padding: 25px;
@@ -98,4 +106,79 @@ input{
     cursor: pointer;
 }
 
-/* Sign in modal styling */
+@media screen and (max-width: 1024px){
+    .main-menu{ width: 50%; }
+}
+
+@media screen and (max-width: 600px){
+    .command {display: none;}
+}
+
+/*  Mobile View  */
+@media screen and (max-width: 768px){
+    *{
+        margin: 0;
+    }
+
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    nav {max-height: 77px;}
+
+    .user-btn{display: none;}
+
+    .mobile-user-btn{ 
+        display: flex; 
+        justify-content: space-around;
+        width: 17%;
+    }
+
+    .mobile-user-btn div {cursor: pointer;}
+
+    .main-menu{
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        top: 78px;
+        background-color: rgb(83, 93, 228);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: 85%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .main-menu li{ opacity: 0;}
+
+    .hamburger{ 
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active{transform: translateX(0%);}
+
+@keyframes menuItemFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}

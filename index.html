@@ -20,8 +20,21 @@
                 <div id="sign-up-btn"><i class="fas fa-user-plus"></i>Sign up</div>
                 <div id="sign-in-btn"><i class="fas fa-sign-in-alt"></i>Sign in</div>
             </div>
+            <!-- Mobile user buttons -->
+            <div class="mobile-user-btn">
+                <div id="mobile-sign-up-btn">
+                    <i class="fas fa-user-plus"></i>
+                    <div class="command">Sign Up</div>
+                </div>
+                <div id="mobile-sign-in-btn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <div class="command">Sign In</div>
+                </div>
+            </div>
             <ul class="main-menu">
                 <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">CONTACTS</a></li>
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">ABOUT</a></li>
             </ul>
@@ -32,6 +45,13 @@
             </div>
         </nav>
         <!-- End of Navigation Bar -->
+
+        <div class="container">
+            <p>
+                All of your interactions on this web page is pretty much done in the navigation bar.
+                Not much to do below it except reading this text. :)
+            </p>
+        </div>
 
         <!-- The Modal -->
         <div id="sign-up" class="sign-up-modal">
@@ -55,7 +75,23 @@
                 </form>
             </div>
         </div>
-        <div id="sign-in" class="sign-in-modal"></div>
+        <div id="sign-in" class="sign-in-modal">
+            <div class="sign-in-content">
+                <span class="close">&times</span>
+                <div class="heading">
+                    <h3>Sign In</h1>
+                </div>
+                
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="sign-in-email" placeholder="Enter email address">
+                    <label for="password">Password</label>
+                    <input type="password" id="sign-in-password" placeholder="Enter password">
+                    <div class="submit-container"><input type="submit" class="submit-btn" value="Sign in"></div>
+                    <div class="clear-container"><input type="reset" class="clear-btn" value="Clear"></div>
+                </form>
+            </div>
+        </div>
         <script src="js/script.js"></script>
     </body>
 </html>
